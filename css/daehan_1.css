@@ -1,0 +1,415 @@
+@charset "UTF-8";
+#wrapper {
+  width: 100%;
+  height: 100vh;
+}
+#header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(rgb(0, 82, 156) 100px, rgba(0, 82, 156,0.7) 300px, rgba(0, 82, 156,0.5));
+  z-index: 10;
+}
+#box {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.header h1 {
+  padding-top: 20px;
+}
+.header .select {
+  float: right;
+  right: 0;
+  margin-top: -50px;
+  font-size: 14px;
+  color: #fff;
+}
+.header .select span {
+  margin-right: 15px;
+
+}
+.header .select select {
+  padding: 1px 4px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: #00529b;
+}
+
+/* 헤더 메뉴바*/
+.header nav {
+  position: absolute;
+  float: right;
+  width: 700px;
+  right: 0;
+  margin-top: -10px;
+
+}
+.header .gnb {
+  height: 46px;
+  overflow: hidden;
+}
+.header .gnb li a {
+  height: 45px;
+  text-align: center;
+  color: #fff;
+}
+.header .gnb > li {
+  float: left;
+  width: 25%;
+}
+.header .gnb > li > a {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.header .gnb > li> a:hover {
+  border-bottom: 5px solid #ff1e17;
+  box-sizing: border-box;
+}
+.header .gnb li a {
+  display: block;
+}
+.header .gnb li ul {
+  margin-top: 30px;
+}
+.header .gnb li ul li a {
+  font-size: 17px;
+  font-family: 'NanumSquare', sans-serif;
+}
+.header .gnb li ul li a:hover {
+  color: #5fb3fe;
+}
+#banner {
+  width: 100%;
+  height: 100vh;
+}
+.ticket {
+  font-family: 'WONDotum';
+  position:absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+.ticket ul {
+  position: absolute;
+  top: 55px;
+  left: 45px;
+}
+.ticket .way li {
+  float: left;
+}
+.ticket .way li a {
+  display: block;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+}
+.ticket .way li a.active {
+  color: #fff;
+  background-color: #00529b;
+}
+.ticket .fill {
+  top: 145px;
+}
+.ticket .fill li {
+  float: left;
+  padding: 10px 10px;
+  margin-right: 40px;
+  font-size: 18px;
+  border-bottom: 3px solid #00529b;
+}
+.ticket .fill li:first-child {
+  margin-left: 20px;
+}
+.ticket .fill li i {
+  margin-left: 110px;
+  font-size: 24px;
+  color: #00529b;
+}
+.ticket > a {
+  position: absolute;
+  right: 65px;
+  bottom: 66px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #fff;
+  background-color: #00529b;
+}
+
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.banner > img {
+  position: absolute;
+  z-index: 3;
+}
+.slides {
+  position: absolute;
+  width: 5760px;
+  height: 100vh;
+}
+.slides li {
+  float:left;
+}
+
+/* reservation */
+#reservation {
+  position: relative;
+  height: 100vh;
+  background-image: url('../images/plane.png');
+  background-repeat: no-repeat;
+  background-position: 100px bottom;
+  background-size: 600px auto;
+  background-color: #f3faff;
+
+  animation-name: fly-cycle;
+  animation-timing-function: steps(300);
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+  animation-delay: 1s;
+}
+@keyframes fly-cycle {
+  50% {
+  background-position: 1000px 90%;
+  }
+  100% {
+  background-position: 1300px 60%;
+  }
+}
+.reservation {
+  height: 100vh;
+  text-align: center;
+}
+h2 {
+  font-family: 'yg-jalnan';
+  padding-top :180px;
+  margin-bottom: 150px;
+  text-align: center;
+  font-size: 40px;
+  color: #00529b;
+}
+.reservation .check_re {
+  float: left;
+  width: 50%;
+  margin: 0 auto;
+}
+.reservation .check_re p {
+  margin-top: 50px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* event */
+#event {
+  position: relative;
+  height: 100vh;
+}
+.event .frame {
+  width: 100%;
+  height: inherit;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+
+  /* cube 회전 */
+  animation: rotate 1s 1 linear;
+  animation-fill-mode: forwards;
+  transform: rotateY(60deg);
+}
+.frame a {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -200px;
+  transition: 0.5s;
+}
+.frame a:hover {
+  top: -70px;
+}
+.card01 {
+  position: relative;
+  transform: translateZ(10PX);
+}
+.card02 {
+  position: relative;
+  transform: translateZ(150PX);
+  top: 0;
+}
+.card03 {
+  position: relative;
+  transform: translateZ(300PX);
+}
+.card04 {
+  position: relative;
+  transform: translateZ(450PX);
+}
+.card05 {
+  position: relative;
+  transform: translateZ(600PX);
+}
+.card06 {
+  position: relative;
+  transform: translateZ(750PX);
+}
+.perspective {
+  position: relative;
+  perspective: 6000px; /*시점거리*/
+  /* 시점 바꾸기  (x,y)*/
+  perspective-origin: 400px -200px;
+}
+
+/* service */
+#service {
+  position: relative;
+  height: 100vh;
+  background-color: #f3faff;
+}
+.sev_box {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.sev_box img {
+  cursor: pointer;
+}
+.sev p {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* ad */
+#ad {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#ad a {
+  position: absolute;
+  display: block;
+  left: 50%;
+  bottom: 130px;
+  padding: 20px 40px;
+  font-size: 18px;
+  color: #fff;
+  border: 1px solid #fff;
+  transform: translateX(-50%);
+  transition: 1s;
+}
+#ad a:hover {
+  background-color: rgba(0, 82, 156,0.4);
+}
+
+/* footer */
+#footer {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: #2e4c66;
+}
+.container2 {
+  width: 1000px;
+  margin: 0 auto;
+}
+.footer {
+  padding-top: 50px;
+}
+.footer h3 {
+  float: right;
+}
+.footer nav > ul {
+  width: 800px;
+  color: #fff;
+}
+.footer nav > ul > li {
+  float: left;
+  width: 25%;
+}
+.footer nav > ul > li  a {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+.footer nav > ul > li > ul > li {
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.address {
+  float: left;
+  width: 60%;
+  margin-top: 30px;
+  line-height: 20px;
+  font-size: 11px;
+  color: #fff;
+}
+
+.sns {
+  float: right;
+  margin-top: 30px;
+}
+
+.sns a {
+  color: #fff;
+  font-size: 30px;
+}
+
+#card {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 33;
+  background-color: rgba(88, 88, 88, 0.8);
+}
+.hey {
+  margin-top: 280px;
+  text-align: center;
+}
+
+.hey p {
+  position: absolute;
+  bottom: 140px;
+  left: 50%;
+  padding: 10px 30px;
+  font-size: 20px;
+  color: #fff;
+  border: 2px solid #fff;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.hey p:hover {
+  background-color: #404040;
+}
+
+
+
+
+
+
+
+
+
+
+/*  */

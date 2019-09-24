@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="기업사이트, 대한항공, 웹페이지">
+    <meta name="description" content="기업사이트 대한항공 리뉴얼 사이트 만들기">
+    <meta name="author" content="김예진">
+    <title>대한항공</title>
+
+    <link rel="stylesheet" href="css/daehan.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- 어썸폰트 연결 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <!-- 웹폰트 연결 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/daehan.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header id="header">
+        <div class="container">
+          <div class="header clearfix">
+            <h1><a href="https://gennii.github.io/daehan/"><img src="images/logo.png" alt="logo"></a></h1>
+            <div class="select">
+              <span>로그인</span>
+              <span>회원가입</span>
+              <select name="KOR">
+                <option value="">KOR</option>
+                <option value="">ENG</option>
+              </select>
+            </div> <!-- //.select -->
+            <nav>
+              <ul class="gnb clearfix">
+                <li><a href="#a">예약</a>
+                  <ul>
+                    <li><a href="#a">항공권 예매</a></li>
+                    <li><a href="#a">보너스 예매</a></li>
+                  </ul>
+                </li>
+                <li><a href="#a">스카이패스</a>
+                  <ul>
+                    <li><a href="#a">회원 혜택</a></li>
+                    <li><a href="#a">마일리지 적립</a></li>
+                    <li><a href="#a">보너스 사용</a></li>
+                  </ul>
+                </li>
+                <li><a href="#a">서비스</a>
+                  <ul>
+                    <li><a href="#a">탑승수속</a></li>
+                    <li><a href="#a">수화물</a></li>
+                    <li><a href="#a">도움이 필요한 승객</a></li>
+                    <li><a href="#a">기내 및 클래스별 서비스</a></li>
+                    <li><a href="#a">항공기 안내</a></li>
+                    <li><a href="#a">기내 면세품</a></li>
+                  </ul>
+                </li>
+                <li><a href="#a">프로모션</a>
+                  <ul>
+                    <li><a href="#a">이벤트</a></li>
+                    <li><a href="#a">특가 항공권</a></li>
+                    <li><a href="#a">엑설런트 서비스</a></li>
+                    <li><a href="#a">전용기</a></li>
+                    <li><a href="#a">여행상품</a></li>
+                  </ul>
+                </li>
+              </ul> <!-- //.gnb -->
+            </nav>
+          </div> <!-- //.header -->
+        </div> <!-- //.container -->
+      </header>
+
+      <section id="banner" class="box">
+        <div class="ticket">
+          <img src="images/ticket.png" alt="ticket">
+          <ul class="way clearfix">
+            <li><a href="#a" class="active">왕복</a></li>
+            <li><a href="#a">편도</a></li>
+            <li><a href="#a">다구간</a></li>
+          </ul>
+          <ul class="fill">
+            <li><span>출발지</span><i class="fas fa-map-marker-alt"></i></li>
+            <li><span>도착지</span><i class="fas fa-map-marker-alt"></i></li>
+            <li><span>탑승일</span><i class="fas fa-calendar-alt"></i></li>
+            <li><span>성인</span><i class="fas fa-user"></i></li>
+          </ul>
+          <a href="#a">조회</a>
+        </div>
+        <div class="banner">
+          <img src="images/title.png" alt="banner-content">
+          <ul class="slides">
+            <li><img src="images/slide01.jpg" alt="slide1"></li>
+            <li><img src="images/slide02.jpg" alt="slide2"></li>
+            <li><img src="images/slide03.jpg" alt="slide3"></li>
+          </ul>
+        </div> <!-- //.banner -->
+      </section>
+      <!-- //#banner -->
+      <section id="reservation" class="box">
+        <div class="back">
+          <div class="container">
+            <div class="reservation">
+              <h2>예약 확인</h2>
+
+              <div class="res_card res_card2">
+                <img src="images/res_2.jpg" alt="">
+                <div class="info">
+                  <p>웹 체크인 하기</p>
+                  <button>바로가기</button>
+                </div>
+              </div>
+              <!-- //.res_card1 -->
+              <div class="res_card res_card1">
+                <img src="images/res_1.jpg" alt="">
+                <div class="info">
+                  <p>나의 예약 확인</p>
+                  <button>바로가기</button>
+                </div>
+              </div>
+              <!-- //.res_card2 -->
+
+            </div> <!-- //.reservation -->
+          </div> <!-- //.container -->
+        </div>
+      </section>
+      <!-- //#reservation -->
+
+      <section id="event" class="box">
+        <img src="images/paper_plane.png" alt="" width="500">
+        <div class="container">
+          <div class="event">
+            <h2>오직 대한항공에서만!</h2>
+            <p>어디에도 없는 특별한 이벤트를 지금 대한항공에서 경험하세요.</p>
+            <div class="perspective">
+              <div class="card card01">
+                <img src="images/card01.jpg" alt="event1" width="350">
+              </div>
+              <div class="card card02">
+                <img src="images/card02.jpg" alt="event2" width="350">
+              </div>
+              <div class="card card03">
+                <img src="images/card03.jpg" alt="event3" width="350">
+              </div>
+              <div class="card card04">
+                <img src="images/card04.jpg" alt="event4" width="350">
+              </div>
+              <div class="card card05">
+                <img src="images/card05.jpg" alt="event5" width="350">
+              </div>
+              <div class="card card06">
+                <img src="images/card06.jpg" alt="event6" width="350">
+              </div>
+            </div> <!-- //.perspective -->
+          </div> <!-- //.event -->
+        </div> <!-- //.container -->
+      </section>
+      <!-- //#event -->
+      <section id="service" class="box">
+        <div class="service">
+          <h2>부가서비스</h2>
+          <p>대한항공의 다양한 부가서비스와 함께하면 더 즐거운 여행길!</p>
+          <div class="sev_box">
+            <div class="sev">
+              <img src="images/package.png" alt="package" width="250">
+              <p>초과 수화물</p>
+            </div>
+            <div class="sev">
+              <img src="images/seat.png" alt="seat" width="250">
+              <p>사전 좌석 배정</p>
+            </div>
+            <div class="sev">
+              <img src="images/meal.png" alt="meal" width="250">
+              <p>특별 기내식</p>
+            </div>
+            <div class="sev">
+              <img src="images/duty.png" alt="dutyfree" width="250">
+              <p>기내 면세품</p>
+            </div>
+            <div class="sev">
+              <img src="images/check.png" alt="checkin" width="250">
+              <p>모바일 체크인</p>
+            </div>
+          </div>
+        </div><!-- //.service -->
+      </section>
+      <!-- //#service -->
+      <section id="ad" class="box">
+        <a href="#a">자세히 보기</a>
+      </section>
+      <!-- //#ad -->
+
+      <footer id="footer" class="box">
+        <div class="container2">
+          <div class="footer clearfix">
+            <h3><img src="images/foot_logo.png" alt="footer-logo" width="80"></h3>
+            <nav>
+              <ul>
+                <li><a href="#a">약관 및 규정</a>
+                  <ul class="clearfix">
+                    <li>개인정보 처리방침</li>
+                    <li>회원약관</li>
+                    <li>운송약관</li>
+                    <li>소비자 안전 관련 정보 공개</li>
+                    <li>운임 및 서비스요금표</li>
+                  </ul>
+                </li>
+                <li><a href="#a">기타 안내</a>
+                  <ul>
+                    <li>고객 안내 서비스</li>
+                    <li>항공교통이용자 서비스 계획</li>
+                    <li>항공교통이용자 피해규제</li>
+                    <li>관련 사이트</li>
+                    <li>사이트맵</li>
+                  </ul>
+                </li>
+                <li><a href="#a">고객지원</a>
+                  <ul>
+                    <li>지점 연락처</li>
+                    <li>고객의 말씀</li>
+                    <li>FAQ</li>
+                    <li>e 서식함</li>
+                    <li>채팅 서비스</li>
+                  </ul>
+                </li>
+                <li><a href="#a">회사소개</a>
+                  <ul>
+                    <li>대한항공에 대하여</li>
+                    <li>경영 재무 정보</li>
+                    <li>녹색경영</li>
+                    <li>사회공헌활동/초등학생견학</li>
+                    <li>공지사항/뉴스</li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="address">
+              <p>(주) 대한항공 | 대표이사 : 우기홍 외 1명 | 주소 : 서울특별시 강서구 하늘길 260 | 대표전화 : 1588-2001 / 02-2656-2001</p>
+              <p>사업자 등록번호 : 110-81-14794 | 통신판매업신고 : 강서 제 16-3010 | 개인정보보호책임자 : 여객사업본부장 이진호 상무</p>
+              <p>&copy; 1997-2019 KOREAN AIR</p>
+            </div>
+            <div class="sns">
+              <a href="#a"><i class="fab fa-facebook-square"></i></a>
+              <a href="#a"><i class="fab fa-twitter"></i></a>
+              <a href="#a"><i class="fab fa-instagram"></i></a>
+              <a href="#a"><i class="fab fa-google-plus-square"></i></a>
+            </div>
+          </div> <!-- //.footer -->
+        </div>
+      </footer>
+      <!-- //#footer -->
+    </div> <!-- //#wrapper -->
+  </body>
+</html>
